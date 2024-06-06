@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function getValue(){
+            var datetime=document.getElementById("datumLokal").value;
+            alert(datetime);
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <div>
+            <label for="boja">Boja</label>
+            <input type="color" value="fff" id="boja">
+        </div>
+        <div>
+            <label for="datum">Datum</label>
+            <input type="date"  id="datum">
+        </div>
+        <div>
+            <label for="datumLokal">Datum lokal</label>
+            <input type="datetime-local"  id="datumLokal">
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email"  id="email" name="email" required>
+        </div>
+        <div>
+            <label for="month">Month</label>
+            <input type="month"  id="month" name="month" >
+        </div>
+        <div>
+            <label for="number">Number</label>
+            <input type="number"  id="number" name="number" min="1" max="10" step="0.5">
+        </div>
+        <div>
+            <label for="tel">Telephone</label>
+            <input type="tel"  id="tel" name="tel" placeholder="xx-xxxx-xxxx">
+        </div>
+        <div>
+            <label for="range">Range</label>
+            <input type="range"  id="range" name="range" min="1" max="100" step="2">
+        </div>
+        <div>
+            <label for="mysearch">Search</label>
+            <input type="search"  id="search" name="search">
+        </div>
+        <div>
+            <label for="mytime">Odaberi vreme</label>
+            <input type="time"  id="time" name="mytime">
+        </div>
+        <div>
+            <label for="myurl">Odaberi url</label>
+            <input type="url"  id="myurl" name="url">
+        </div>
+        <div>
+            <label for="myweek">Odaberi sedmicu</label>
+            <input type="week"  id="myweek" name="week">
+        </div>
+        
+
+        <button type="button" onclick="getValue();">Vrednost</button>
+        
+
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetris</title>
+     <style>
+        table{
+            border: 1px solid gray;
+        }
+        
+        th ,tfoot, thead {
+            background-color: beige;
+            padding: 5px;
+        }
+        .divide {
+            background-color: rgb(16, 2, 2);
+        }
+        .four-long{
+            background-color: rgb(58, 153, 26);
+        }
+        .left-l{
+            background-color: rgb(215, 109, 23);
+        }
+        .right-l{
+            background-color: rgb(230, 57, 34);
+        }
+        .left-z{
+            background-color: rgb(168, 213, 105);
+        }
+        .right-z{
+            background-color: yellow
+        }
+        .brick-2{
+            background-color: rgb(21, 53, 193);
+        }
+        .triangle {
+            background-color: rgb(29, 219, 232);
+        }
+        td {
+            border: 1px solid gray;
+            width:  10px;
+            height: 10px;
+        }
+        table {
+            border-collapse: collapse;
+            margin: auto;
+        }
+        td {
+            width: 30px;
+            height: 30px;
+            border: 1px solid #ccc;
+            text-align: center;
+        }
+        
+
+        
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+           
+        </thead>
+        <tbody>
+          <tr>
+            <td></td>
+            <td rowspan="2" class="right-z"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td rowspan="3" class="triangle"></td>
+            <td rowspan="2" class="right-z"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>            
+          </tr>
+          <tr>
+            <td class="triangle"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="2" class="left-z"></td>
+            <td></td>
+                                  
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="2" class="left-z"></td>
+                        
+          </tr>
+          <tr>
+            <td rowspan="3" class="left-l"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="2" class="brick-2"></td>                        
+            <td rowspan="3" class="left-l"></td>
+            <td colspan="3" class="triangle"></td>            
+          </tr>
+          <tr>            
+            <td colspan="3" class="triangle"></td>                        
+            <td colspan="2" class="brick-2"></td>                 
+            <td rowspan="3" class="right-l"></td>
+            <td class="triangle"></td>            
+          </tr>
+          <tr>
+            <td class="left-l"></td>
+            <td class="triangle"></td>            
+            <td colspan="2" class="left-z"></td>           
+            <td class="left-l"></td>                        
+            <td colspan="2" class="brick-2"></td>            
+          </tr>
+          <tr>
+            <td colspan="4" class="four-long" ></td>            
+            <td colspan="2" class="left-z"></td>            
+            <td class="right-l"></td>            
+            <td colspan="2" class="brick-2"></td>            
+          </tr>
+        </tbody>
+        <tfoot>
+        </tfoot>        
+    </table> 
+</body>
+</html>

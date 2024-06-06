@@ -1,0 +1,1 @@
+document.getElementById("greet").innerHTML="Pozdrav od ekipe IceFire";
