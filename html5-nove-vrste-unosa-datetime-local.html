@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html 5 | Datetime - local</title>
+    <script>
+        function pozoviVreme(){
+        let lokalnoVreme = document.getElementById("datetimeLocal").value;
+        alert(lokalnoVreme);
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <label for="datetimeLocal" >Odaberite lokalno vreme</label>
+        <input type="datetime-local" id="datetimeLocal" name="datetimeLocal">
+        <button type="button" onclick="pozoviVreme();" >Posalji</button>
+    </form>
+</body>
+</html>

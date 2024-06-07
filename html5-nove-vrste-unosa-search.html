@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTml 5 | Search</title>
+    <script>
+        function getSearch(){
+            let ser = document.getElementById("search").value;
+            alert(ser);
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <label for="search">Unesite pojam za pretragu</label>
+        <input type="search" id="search" name="search">
+        <button type="button" onclick="getSearch();">Posalji</button>
+    </form>
+</body>
+</html>

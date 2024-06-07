@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html5 | Range</title>
+    <script>
+        function getRange()
+        {
+            let ran =document.getElementById("range").value;
+            alert(ran);
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <label for="range">Unesite domen raspon</label>
+        <input type="range" id="range" name="range" min="50" max="80" step="3" >
+        <button type="button" onclick="getRange();"  >Posalji</button>
+    </form>
+</body>
+</html>

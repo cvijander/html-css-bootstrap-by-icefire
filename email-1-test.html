@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<title>HTML5 Vrsta unosa e-pošte</title>
+ <style>
+ input[type="email"]:valid{
+ outline: 2px solid green;
+ }
+ input[type="email"]:invalid{
+ outline: 2px solid red;
+ }
+ </style>
+ <script>
+ function getValue() {
+ var email = document.getElementById("myemail").value;
+ alert(email);
+ }
+ </script>
+ </head>
+ <body>
+<form>
+<label for="myemail">Upišite e-mail adresu:</label>
+<input type="email" id="myemail" required>
+<button type="button" onclick="getValue();">Vrednost</button>
+</form>
+
+    
+</body>
+</html>

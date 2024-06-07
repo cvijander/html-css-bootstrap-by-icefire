@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html 5 | tel</title>
+    <script>
+        function getTel() {
+            let telef=document.getElementById("telefon").value;
+            alert(telef);
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <label for="telefon">Unesite telefon</label>
+        <input type="tel" id="telefon" name="telefon" placeholder="xxx/ xxx - xxxx">
+        <button type="button" onclick="getTel();">Posalji</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html 5 | email</title>
+    <style>
+        input[type="email"]:valid{
+            outline: 2px solid green;
+        }
+        input[type="email"]:invalid{
+            outline: 2px solid red;
+        }
+    </style>
+    <script>
+        function pozoviEmail(){
+            let em = document.getElementById("email").value;
+            alert(em);
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <label for="email">Unesite email</label>
+        <input type="email" id="email" name="email" required>
+        <button type="button" onclick="pozoviEmail();">Posalji</button> 
+        <!--<button>Posalji</button> -->
+    </form>
+</body>
+</html>

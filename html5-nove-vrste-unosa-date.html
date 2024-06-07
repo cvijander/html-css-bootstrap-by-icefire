@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html 5 | Date</title>
+    <script>
+        function vratiVreme(){
+            let vreme = document.getElementById("date").value;
+            alert(vreme);
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <label for="date">Unesite datum</label>
+        <input type="date" id="date" name="dateZaBazu" >
+        <button type="button" onclick="vratiVreme();">Posalji</button>
+    </form>
+</body>
+</html>

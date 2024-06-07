@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html 5 | Number</title>
+    <style>
+        input[type="number"]:valid{
+            outline: 2px solid green;
+        }
+        input:invalid{
+            outline: 2px solid red;
+        }
+    </style>
+    <script>
+        function prikaziBroj()
+        {
+            let broj=document.getElementById("number").value;
+            alert(broj);
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <label for="number">Unesite broj</label>
+        <input type="number" id="number" name="number"  min="10" max="55" step="5" placeholder="15" value="25">
+        <button type="button" onclick="prikaziBroj();">Posalji</button>
+    </form>
+</body>
+</html>

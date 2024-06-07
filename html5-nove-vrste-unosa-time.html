@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html 5 | Time</title>
+    <script>
+        function getTime(){
+            let t=document.getElementById("time").value;
+            alert(t);
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <label for="time">Unesite vreme</label>
+        <input type="time" id="time" name="time">
+        <button type="button" onclick="getTime();" >Posalji</button>
+    </form>
+</body>
+</html>
