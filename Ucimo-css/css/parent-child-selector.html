@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parent -child selector</title>
+    <style>
+       article > p {
+            color: red;
+        }
+
+         aside p>  strong {
+            color:  blue;
+        }
+        em > strong {
+            color: brown;
+        }
+
+        article p> strong {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: 100;
+            font-size: xx-small;
+            color: yellow;
+        }
+
+         article > p {
+            color: red;
+        }
+
+         aside p>  strong {
+            color:  blue;
+        }
+    </style>
+</head>
+<body>
+    <article>
+        <h1>Parent -child selectors</h1>
+        <p>Select the paragraf in the article , not in the aside</p>
+        <aside>
+            <h2>An aside in an article</h2>
+            <p>Lorem ipsum dolor sit amet consectetur<strong> adipisicing elit</strong>. Eligendi, voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati beatae assumenda numquam  <em> maiores <strong> porro enimsuscipit</strong> vitae veritatis </em>temporibus dolores, repudiandae ducimus quaerat quas, odio ullam. Rerum, qui ullam!</p>
+        </aside>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<strong> Ab quas distinctio </strong>  dolore accusamus soluta consequuntur ipsam nulla ullam voluptas?</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi dolorum repellendus quo cupiditate similique quibusdam quia perspiciatis necessitatibus aliquam ipsa.</p>
+    </article>
+</body>
+</html>
+
+<!-- artikle   (h1 ) P Aside P P -->

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>General sibling selector</title>
+    <style>
+        h1 ~p {
+            color: chocolate;
+        }
+        aside ~ p {
+            color: blue;
+        }
+
+        p ~p {
+            background-color: beige;
+        }
+        
+        h2 ~ p {
+            color: brown;
+        }
+        p ~h2 {
+            color: yellow;
+        }
+        
+        strong ~ em {
+            font-size: xx-small;
+        }
+
+        .warning > p a {
+
+        }
+        a:link  {
+         
+        }
+
+        a :link {
+
+        }
+    </style>
+</head>
+<body>
+     <article>
+        <h1>General sibling selectors</h1>
+        <p>Select the paragraf in the article , not in the aside</p>
+        <aside>
+            <h2>An aside in an article</h2>
+            <p>Lorem ipsum dolor sit amet consectetur<strong> adipisicing elit</strong>. Eligendi, voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati beatae assumenda numquam  <em> maiores <strong> porro enimsuscipit</strong> vitae veritatis </em>temporibus dolores, repudiandae ducimus quaerat quas, odio ullam. Rerum, qui ullam!</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit, illum.</p>
+        </aside>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<strong> Ab quas distinctio </strong>  dolore accusamus soluta consequuntur ipsam nulla ullam voluptas?</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi dolorum repellendus quo cupiditate similique quibusdam quia perspiciatis necessitatibus aliquam ipsa.</p>
+    </article>
+</body>
+</html>

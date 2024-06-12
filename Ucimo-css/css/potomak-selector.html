@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Primer CSS descendant selektor </title>
+        <style>
+            h1 em {
+                color: green;
+            }
+
+            ul.menu {
+                padding: 0;
+                list-style: none;
+            }
+
+            ul.menu li {
+                display: inline;
+            }
+
+            ul.menu li a{
+                margin: 10px;
+                text-decoration: none;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>IFS <em>nesto</em></h1>
+        <ul class="menu">
+            <li><a href="#">Pocetna</a></li>
+            <li><a href="#">O nama</a></li>
+            <li><a href="#">Kursevi</a></li>
+            <li><a href="#">Kontakt</a></li>
+            <li><a href="#">Galerija</a></li>
+        </ul>
+    </body>
+</html>

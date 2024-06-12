@@ -1,0 +1,48 @@
+h1 , h2, h3{
+    background-color: aquamarine;
+}
+
+
+
+p {
+    color: blueviolet;
+}
+
+#idH1{
+   color: chocolate;
+}
+
+.classOboji{
+    font-weight: 900;
+}
+
+p.classOboji{
+    color: aqua;
+    font-size: medium;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p.classVelicina {
+    font-size: xx-large;
+}
+
+.myclass p {
+    width: 300px;
+    height: 400px;
+    color: aqua;
+}
+
+p .classVelicina {
+    font-size: small;
+    font-style: oblique;
+}
+
+h2#idH1 {
+    background-color: black;
+}
+
+.classVelicina {
+    font-size: small;
+    font-style: oblique;
+}

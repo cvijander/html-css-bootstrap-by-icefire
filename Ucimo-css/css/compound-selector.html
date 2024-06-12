@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compound selector</title>
+    <style>
+        p.myClass {
+            color: red;
+        }
+ 
+        ul.myClass{
+            color: blue;
+        }
+
+        p#myId{
+            color: blueviolet;
+        }
+
+        article#myId{
+            color: black;
+        }
+
+        .myClass {
+            color:purple;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: 800;
+        }
+    </style>
+
+</head>
+<body>
+    <article>
+        <h1>Compound selector</h1>
+        <p class="myClass">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis totam vel repellat ullam expedita, quaerat cupiditate vitae atque sapiente odio perspiciatis magni itaque aspernatur nesciunt nobis mollitia quia deleniti saepe.   </p>
+
+        <ul class="myClass">
+            <li>Point 1</li>
+            <li>Point 2</li>
+            <li>Point 3</li>
+        </ul>
+
+        <p id="myId">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate quam delectus ipsa sed velit possimus saepe enim inventore nihil laudantium maiores molestiae cum assumenda cupiditate quas aliquid, nisi qui. Accusamus?</p>
+    </article>
+</body>
+</html>
