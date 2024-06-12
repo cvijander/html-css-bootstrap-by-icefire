@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Atribute selectors</title>
+        <style>
+            a[title]{
+                color: red;
+             }
+
+              [title]{
+                color: rgb(43, 0, 128);
+             }
+              p[title]{
+                color: rgb(4, 255, 0);
+             }
+        </style>
+    </head>
+    <body>
+        <a name="top"></a>
+        <p title="this is a paragraf">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti at aut ipsa voluptas sequi corporis ad, facilis totam ratione molestias.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti at aut ipsa voluptas sequi corporis ad, facilis totam ratione molestias.</p>
+        <p><a href="https://www.linkewdin.com">Visit linkedin</a></p>
+        <a href="#top" title="go to top">to top</a>
+        <div title="div">
+           <h1>Naslov</h1>
+        </div>
+
+    </body>
+</html>
