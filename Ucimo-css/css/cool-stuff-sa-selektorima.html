@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a[href*="https"] {
+            background: url(../images/Super-Mario.ico);
+            background: no-repeat;
+            background: right;
+            background-size: 15px;
+            padding-right: 14px;
+        }
+
+        a[href*="http"]::after {
+            content: " (goes offsite)";
+        }
+    </style>
+</head>
+<body>
+    <p><a href="https://www.google.com" target="_blank">I go to google</a></p>
+    <p><a href="https://www.linkedin.com" target="_blank">I go to linkedin</a></p>
+</body>
+</html>

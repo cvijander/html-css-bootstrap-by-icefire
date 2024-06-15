@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beg end and artibtrary </title>
+    <style>
+        [title~="first"]
+        {
+            color: red;
+        }
+
+        [title^="fi"]
+        {
+            color: blue;
+        }
+
+        [title$="th"]
+        {
+            border: 2px dotted green;
+        }
+
+        [title*="fi"]
+        {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li title="first">Item first</li>
+        <li title="the first second">Number two</li>
+        <li title="two from fifth">3 rocks</li>
+        <li title="fourth">Fourth od forth?</li>
+        <li title="fifth">Fifth::last place</li>
+    </ul>
+</body>
+</html>

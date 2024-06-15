@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus i focus within</title>
+    <style>
+        a:focus{
+            outline: 3px solid red;
+        }
+        
+        input:focus, textarea:focus , button:focus{
+            outline: 3px solid red;
+        }
+
+        ul:focus-within {
+           background-color: yellow;
+        }
+
+        form:focus-within {
+            background-color: chocolate;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="https://www.linkedin.com" target="_blank">Linkedin</a></li>
+        <li><a href="https://www.google.com" target="_blank">Google</a></li>
+        <li><a href="https://www.b92.net" target="_blank">B 92</a></li>
+    </ul>
+
+    <form>
+        <fieldset>
+            <legend>Your contact information</legend>        
+            <div>
+                <div><label for="name">Your name</label></div>
+                
+                <div><input type="text" name="name" id="name"></div>
+            </div>
+            <div>
+                <div><label for="number">Phone number</label></div>
+                <div><input type="num" name="number" id="number"></div>
+            </div>
+            <div>
+                <div><label for="email">Email</label></div>
+                <div><input type="email" name="email" id="email"></div>
+            </div>
+            <div>
+                <div><label for="comments">Comments:</label></div>
+                <textarea></textarea>
+            </div>
+              <button>Submit</button>
+        </fieldset>
+    </form>
+</body>
+</html>

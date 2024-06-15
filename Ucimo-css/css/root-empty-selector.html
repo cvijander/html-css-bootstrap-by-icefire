@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Root and empty selector</title>
+    <style>
+        :root {
+           --standard-size:2rem;
+           font-family: Arial, Helvetica, sans-serif;
+        
+        }
+       
+        div:empty {
+            background-color: gold;
+        }
+
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-gap: var(--standard-size);
+            max-width: 900px;
+            margin: 0 auto;
+
+        }
+
+        .cell {
+            background-color: tomato;
+            color: white;
+            padding: var(--standard-size);
+            border-radius: 0.5rem;
+        }
+
+         /* LVHA  - LiVe HAppy -*/
+         /* LV F HA  - lord vader former handle anakin */
+       /* a:link {
+            
+            color: rgb(133, 133,133);
+            
+        }
+        a:visited {
+            color: chocolate;
+            border: 3px solid red;
+            font-size: xx-large;
+        }
+
+       a:focus{
+        background-color: yellow;
+       } 
+        a:hover{
+            
+            font-size: x-large;
+        }
+        a:active {
+            color: pink;
+        }
+
+        p:focus{
+        background-color: yellow;
+       } 
+        p:hover{
+            
+            font-size: x-large;
+        }
+        div:hover{
+           font-size: x-large;
+        }*/
+
+        a:any-link {
+            color: green;
+
+        }
+        a:hover {
+            font-size: xx-large;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="cell">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, quia? Delectus, facere? Quibusdam, veniam nemo quos quisquam itaque provident enim exercitationem earum alias atque suscipit ut dolores unde. Incidunt, facere!</div>
+        <div class="cell"><!-- prazan div--></div>
+        <div class="cell"> <!--empty cell ali nije posto ima razmaka tj space--> </div>
+    </div>
+    <ul>
+        <li><a href="https://www.google.com" target="_blank">Google</a></li>
+        <li><a href="https://www.linkedin.com" target="_blank">Linkeidn</a></li>
+        <li><a href="https://www.b92.net" target="_blank">B 92</a></li>
+        <li><a href="#">Prazan</a></li>
+        <li><a href="#">Prazan</a></li>
+        <li><a href="#down">Prazan 1</a></li>
+        <li><a href="#top">Prazan 2</a></li>
+        
+
+    </ul>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita aliquid explicabo neque illo unde dignissimos reprehenderit sunt. Odit ipsam, beatae minus saepe totam nihil fuga reiciendis consequuntur, dignissimos est eius.</p>
+</body>
+</html>

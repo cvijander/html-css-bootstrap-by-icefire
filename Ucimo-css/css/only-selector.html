@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Only selector</title>
+    <style>
+        strong:only-child {
+            color: red;
+        }
+
+        aside:only-of-type {
+            background-color: purple;
+        }
+        h2:only-of-type {
+            color: white;
+        }
+
+        p:only-of-type {
+            color: chocolate;
+        }
+        strong:only-of-type {
+            border-bottom: 2px dashed yellow;
+        }
+    </style>
+</head>
+<body>
+    <article>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta laudantium perferendis adipisci incidunt magnam facere eius ipsum minima hic reprehenderit?</p>
+        <aside>
+            <h2>An aside in an article</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente <strong> doloribus repellendus,</strong> vel beatae adipisci reprehenderit voluptates molestiae, sint praesentium incidunt accusantium nisi minima<em><strong>quam delectus minus temporibus</strong></em>  non dolorum modi?</p>
+        </aside>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<strong> Modi voluptas dignissimos</strong> fuga sit esse alias hic repudiandae eius itaque ex!</p>
+    </article>
+</body>
+</html>

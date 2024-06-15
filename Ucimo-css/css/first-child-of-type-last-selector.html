@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First of child, first of type and last of type and child</title>
+    <style>
+        li:first-child {
+            color: red;
+        }
+        li:last-child {
+            color: blue;
+        }
+
+        p:first-of-type {
+            background-color: chocolate;
+        }
+
+        p:last-of-type {
+            border: 3px solid yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li title="one">One</li>
+        <li title="first">Item first</li>
+        <li title="the first second">Number two</li>
+        <li title="two from fifth">3 rocks</li>
+        <li title="fourth">Fourth of Forth?</li>
+        <li title="fifth">Fifth: the last</li>
+    </ul>
+    <article>
+        <h1>The first and last selectors</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <strong> rerum delectus </strong> repellendus reiciendis tenetur natus <em><strong> nesto ovde da stoji</strong></em> maiores autem nisi eaque.</p>
+        <aside>
+            <h2>An aside in an article</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.<strong> Quia eius non, placeat </strong> repellendus incidunt aut ipsam eos. Atque, id itaque!</p>
+        </aside>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.<strong> Pariatur aperiam </strong> quas incidunt, reprehenderit   aliquid.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, iste.<strong> Amet quaerat</strong> consequuntur nobis, vel fugiat illum asperiores?</p>   
+
+    </article>
+</body>
+</html>
