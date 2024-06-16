@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Liste uredjenje</title>
+    <style>
+        ul li {
+           background-color: cadetblue;
+        }
+        
+        .classPositionInside{
+            
+            list-style-image: url(../images/pizza.png) ; 
+           
+            margin: 5px;     
+        }
+
+         .classPositionOutside{
+            list-style-position: outside;  
+              list-style-image: url(../images/pizza.png) ; 
+            margin: 5px;     
+        }
+
+                 
+        ol li {
+            background-color: bisque;
+        }
+        dl {
+           background-color: azure;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ul>
+
+    <hr>
+    <ol>
+        <li>Broj 1</li>
+        <li>Broj 2</li>
+        <li>Broj 3</li>
+        <li>Broj 4</li>
+        <li>Broj 5</li>
+    </ol>
+
+    <hr>
+    <dl>
+       <dt>Naslov</dt>
+       <dd>Neki opis</dd>
+       <dt>Naslov</dt>
+       <dd>Neki opis</dd>
+    </dl>
+
+    <ul>
+        <li class="classPositionInside">Item 1</li>
+        <li class="classPositionInside">Item 12</li>
+        <li class="classPositionInside">Item 13</li>
+        <li class="classPositionInside">Item 14</li>
+        <li class="classPositionOutside">Item 21</li>
+        <li class="classPositionOutside">Item 22</li>
+        <li class="classPositionOutside">Item 23</li>
+        <li class="classPositionOutside">Item 24</li>
+        
+        
+    </ul>
+</body>
+</html>
