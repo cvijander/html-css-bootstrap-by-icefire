@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pravimo tabele</title>
+    <style>
+        table , td, th{
+            border: 2px solid #ccc;
+            border-collapse:collapse;
+        }
+            
+         caption{
+            caption-side: top;
+         }   
+                      
+            
+        
+        .classTableFixed{
+            table-layout: fixed;
+        }
+
+        .classTableAuto{
+            table-layout: auto;
+        }
+            
+        table{
+           width: 300px;
+        }
+        td{
+           width: 50%;
+           text-align: center;
+           padding: 10px;
+           empty-cells:show ;
+        }
+
+         tr:nth-child(odd) {
+              background-color: burlywood;
+         }  
+           
+        
+
+        th {
+          height: 40px;
+          text-align: center;
+          vertical-align:bottom;
+        }
+        
+
+        
+    </style>
+</head>
+<body>
+    <div style="overflow-x:auto;">
+     <table class="classTableAuto">
+        <caption>Naslov tabele</caption>
+        <thead>
+            <tr>
+               <th>Ime</th>
+               <th>Prezime</th>
+               <th>Broj</th>
+               <th>Broj</th>
+                <th>Ime</th>
+               <th>Prezime</th>
+               <th>Broj</th>
+               <th>Broj</th>
+                <th>Ime</th>
+               <th>Prezime</th>
+               <th>Broj</th>
+               <th>Broj</th>
+                <th>Ime</th>
+               <th>Prezime</th>
+               <th>Broj</th>
+               <th>Broj</th>
+                <th>Ime</th>
+               <th>Prezime</th>
+               <th>Broj</th>
+               <th>Broj</th>
+                <th>Ime</th>
+               <th>Prezime</th>
+               <th>Broj</th>
+               <th>Broj</th>
+                <th>Ime</th>
+               <th>Prezime</th>
+               <th>Broj</th>
+               <th>Broj</th>
+                <th>Ime</th>
+               <th>Prezime</th>
+               <th>Broj</th>
+               <th>Broj</th>
+                <th>Ime</th>
+               <th>Prezime</th>
+               <th>Broj</th>
+               <th>Broj</th>
+                <th>Ime</th>
+               <th>Prezime</th>
+               <th>Broj</th>
+               <th>Broj</th>
+                <th>Ime</th>
+               <th>Prezime</th>
+               <th>Broj</th>
+               <th>Broj</th>
+                <th>Ime</th>
+               <th>Prezime</th>
+               <th>Broj</th>
+               <th>Broj</th>
+                <th>Ime</th>
+               <th>Prezime</th>
+               <th>Broj</th>
+               <th>Broj</th>
+                <th>Ime</th>
+               <th>Prezime</th>
+               <th>Broj</th>
+               <th>Broj</th>
+                <th>Ime</th>
+               <th>Prezime</th>
+               <th>Broj</th>
+               <th>Broj</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ana</td>
+                <td>Petrovic</td>
+                <td>123</td>
+                <td>Ana</td>
+                <td>Petrovic</td>
+                <td>123</td>
+                <td>Ana</td>
+                <td>Petrovic</td>
+                <td>123</td>
+                <td>Ana</td>
+                <td>Petrovic</td>
+                <td>123</td>
+                <td>Ana</td>
+                <td>Petrovic</td>
+                <td>123</td>
+                <td>Ana</td>
+                <td>Petrovic</td>
+                <td>123</td>
+                <td>Ana</td>
+                <td>Petrovic</td>
+                <td>123</td>
+                <td>Ana</td>
+                <td>Petrovic</td>
+                <td>123</td>
+                <td>Ana</td>
+                <td>Petrovic</td>
+                <td>123</td>
+                <td>Ana</td>
+                <td>Petrovic</td>
+                <td>123</td>
+                <td>Ana</td>
+                <td>Petrovic</td>
+                <td>Ana</td>
+                <td>Petrovic</td>
+                <td>Ana</td>
+                <td>Petrovic</td>
+                <td>123</td>
+                <td>Ana</td>
+                <td>Petrovic</td>
+                <td>123</td>
+                <td>Ana</td>
+                <td>Petrovic</td>
+                <td>123</td>
+                <td>123</td>
+                <td>123</td>
+            </tr>
+             <tr>
+                <td>Ana</td>
+                <td>Petrovic</td>
+                <td>123</td>
+            </tr>
+             <tr>
+                <td>Ana</td>
+                <td>Petrovic</td>
+                <td>123</td>
+            </tr>
+             <tr>
+                <td>Ana</td>
+                <td>Petrovic</td>
+                <td>123</td>
+            </tr>
+             <tr>
+                <td>Ana</td>
+                <td>Petrovic</td>
+                <td>123</td>
+            </tr>
+             <tr>
+                <td></td>
+                <td>Petrovic</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Petrovic</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Petrovic</td>
+                <td></td>
+            </tr>
+        </tbody>
+        <tfoot>
+             <td>Zbir</td>
+             <td>Suma</td>
+             <td>Konacno</td>
+        </tfoot>
+      </table>
+    </div>
+    <hr>
+    <table class="classTableFixed">
+        <thead>
+            <tr>
+               <th>Ime</th>
+               <th>Prezime</th>
+               <th>Broj</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ana</td>
+                <td>Petrovic</td>
+                <td>123</td>
+            </tr>
+             <tr>
+                <td>Ana</td>
+                <td>Petrovic</td>
+                <td>123</td>
+            </tr>
+             <tr>
+                <td>Ana</td>
+                <td>Petrovic</td>
+                <td>123</td>
+            </tr>
+             <tr>
+                <td>Ana</td>
+                <td>Petrovic</td>
+                <td>123</td>
+            </tr>
+             <tr>
+                <td>Ana</td>
+                <td>Petrovic</td>
+                <td>123</td>
+            </tr>
+             <tr>
+                <td>Ana</td>
+                <td>Petrovic</td>
+                <td>123</td>
+            </tr>
+        </tbody>
+        <tfoot>
+             <td>Zbir</td>
+             <td>Suma</td>
+             <td>Konacno</td>
+        </tfoot>
+    </table>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa mollitia atque necessitatibus eligendi, voluptas temporibus quod impedit neque, tempora est, harum nulla pariatur illo cum saepe! Ad amet ab quam voluptates natus deleniti suscipit cupiditate reprehenderit adipisci voluptatum eius odio laboriosam, mollitia a voluptas ipsum! Tenetur molestiae nulla reiciendis quia asperiores, exercitationem animi nam deleniti recusandae nesciunt cupiditate, laboriosam nemo pariatur fugiat quasi! Ea iste id accusamus assumenda quas ab commodi eius corporis dicta perferendis aut mollitia sunt tempora amet officia magnam saepe enim odit, illo sapiente eos consectetur a magni. Exercitationem similique qui inventore quam iusto dignissimos quibusdam sapiente. Provident molestias consectetur alias aliquam consequuntur voluptas, rerum laboriosam error mollitia totam animi repellendus est cum deserunt debitis. Numquam, veritatis! Mollitia recusandae qui excepturi. At, nesciunt, modi ipsam, similique debitis deserunt nobis reprehenderit nemo aliquid architecto repudiandae necessitatibus assumenda laborum? Perspiciatis tempore repudiandae aliquid deleniti cupiditate reiciendis tempora corporis architecto, officia provident ex optio quibusdam quod aut dolorum, facilis veniam est iusto soluta! Ad nisi itaque a placeat? Cum quisquam nam, vitae ullam aperiam saepe eaque eligendi quidem sint optio nemo eveniet iusto, fugiat atque aliquid? Vitae similique fuga voluptas sequi inventore saepe vel, exercitationem commodi delectus veritatis sapiente quos.</p>
+
+</body>
+</html>
